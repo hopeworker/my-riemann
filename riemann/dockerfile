@@ -1,0 +1,3 @@
+FROM ruby:3.3-rc-slim-bullseye
+RUN gem install riemann-client riemann-tools
+CMD ["/bin/bash"]
