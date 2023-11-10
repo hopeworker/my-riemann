@@ -11,6 +11,8 @@ https://riemann.io/howto.html#using-docker
 docker run \
   --rm \
   --net host \
+  -p 5557:5557 \
+  -p 5555:5555 \
   -v /Users/xiongwei/Develop/projects/my-riemann/riemann/riemann.config:/etc/riemann.config \
   riemannio/riemann
 ```
